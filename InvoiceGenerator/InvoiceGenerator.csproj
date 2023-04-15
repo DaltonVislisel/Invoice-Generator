@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\InvoiceDollar.png" />
+    <None Remove="MVM\View\InvoiceDollar.png" />
+    <None Remove="MVM\View\PriceTag.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Fonts\" />
+    <Folder Include="MVM\Model\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Clients.png" />
+    <Resource Include="Images\InvoiceDollar.png" />
+    <Resource Include="Images\PriceTag.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Theme\CreateInvoiceButtonTheme.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>
